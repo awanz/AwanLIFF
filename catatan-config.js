@@ -8,10 +8,10 @@ function loadCatatan() {
                 '<th>ID</th>' +
                 '<th>Nama</th>' +
                 '<th>Tanggal</th>' +
-                '<th>Agenda</th>' +
-                '<th>Hapus Agenda</th>' +
-                '<th>Lihat Agenda</th>' +
-                '<th>Edit Agenda</th>' +
+                '<th>Total</th>' +
+                '<th>Hapus Hutang</th>' +
+                '<th>Lihat Hutang</th>' +
+                '<th>Edit Hutang</th>' +
                 '</thead> <tbody>';
  
             for (i in list_data) {
@@ -131,7 +131,7 @@ function simpanEditData() {
         }]).then(function() {
             alert('Catatan tersimpan');
         }).catch(function(error) {
-            alert('Aduh kok error ya...');
+            alert('error...');
         });
     }
  
@@ -159,7 +159,7 @@ function hapusData(id) {
         }]).then(function() {
             alert('Catatan sudah dihapus');
         }).catch(function(error) {
-            alert('Aduh kok nggak bisa');
+            alert('Error');
         });
     }
  
