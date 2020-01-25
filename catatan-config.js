@@ -89,9 +89,9 @@ function simpanData() {
     } else {
         liff.sendMessages([{
             'type': 'text',
-            'text': "Catatan baru berhasil disimpan"
+            'text': "Catatan Hutang baru berhasil disimpan"
         }]).then(function() {
-            alert('Catatan Tersimpan');
+            alert('Catatan Hutang Tersimpan');
         }).catch(function(error) {
             alert('Aduh kok error ya...');
         });
@@ -127,9 +127,9 @@ function simpanEditData() {
     } else {
         liff.sendMessages([{
             'type': 'text',
-            'text': "Catatan yang diedit sudah tersimpan"
+            'text': "Catatan Hutang berhasil diedit"
         }]).then(function() {
-            alert('Catatan tersimpan');
+            alert('Catatan Hutang Tersimpan');
         }).catch(function(error) {
             alert('error...');
         });
@@ -155,9 +155,9 @@ function hapusData(id) {
     } else {
         liff.sendMessages([{
             'type': 'text',
-            'text': "Catatan sudah terhapus"
+            'text': "Catatan Hutang Terhapus"
         }]).then(function() {
-            alert('Catatan sudah dihapus');
+            alert('Catatan Hutang dihapus');
         }).catch(function(error) {
             alert('Error');
         });
